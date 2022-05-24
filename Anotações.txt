@@ -1,0 +1,70 @@
+git init
+git add .\Teste.txt
+git commit -m "Hello Word git"
+git branch -m master
+git remote add origin "repositorio_git"
+git push -u origin master(autenticar a conta git para concluir a cópia para o repositorio)
+
+
+
+
+
+PS C:\Git_e_GitHub> cd .\1_primeiro_repo\
+PS C:\Git_e_GitHub\1_primeiro_repo> git init
+Initialized empty Git repository in C:/Git_e_GitHub/1_primeiro_repo/.git/
+PS C:\Git_e_GitHub\1_primeiro_repo> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Teste.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Git_e_GitHub\1_primeiro_repo> git add .\Teste.txt
+PS C:\Git_e_GitHub\1_primeiro_repo> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Teste.txt
+
+PS C:\Git_e_GitHub\1_primeiro_repo> git commit -m "Hello World git"
+[master (root-commit) 7913a31] Hello World git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Teste.txt
+PS C:\Git_e_GitHub\1_primeiro_repo> git branch -m master
+PS C:\Git_e_GitHub\1_primeiro_repo> git remote add origin https://github.com/fbergami57/curso_git_1.git
+PS C:\Git_e_GitHub\1_primeiro_repo> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 249 bytes | 49.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/fbergami57/curso_git_1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Git_e_GitHub\1_primeiro_repo>
+==========================================================
+git status - informa a situação dos arquivos que foram adicionados, que precisam ser adicionados e os demais status
+git add - adiciona os arquivos "git add 'nome do arquivo'"
+git add . - adiciona todos os arquivos, desde novos arquivos até arquivos alterados, prontos para serem commitados
+git commit - para preparar os arquivos para subir para o repositorio git
+git push que conclui o envio dos arquivos para o repositorio git
+
+==================================================================
+…or create a new repository on the command line
+echo "# 1_primeiro_repo" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fbergami57/1_primeiro_repo.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/fbergami57/1_primeiro_repo.git
+git branch -M main
+git push -u origin main
