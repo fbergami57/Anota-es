@@ -5,7 +5,18 @@ git branch -m master
 git remote add origin "repositorio_git"
 git push -u origin master(autenticar a conta git para concluir a cópia para o repositorio)
 
+Enviando o código ao repo
+    -git pull 
+    funcionalidade serve para manter os repositórios clonados atualizados
 
+Clonando repositorio
+    -git clone - No github copiar a url do projeto e inserir os seguintes comandos no terminal do VS Code:
+    "git clone https://github.com/fbergami57/curso_git_1.git ."
+    o "." informa o diretório atual em que está sendo clonado
+
+Removendo os arquivos do repo
+    -git rm "nome_arquivo" para remover
+    Depois de removido no VS Code deve ser feito o commit para o repositório git commit -a -m "texto"
 
 
 
