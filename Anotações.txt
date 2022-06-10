@@ -79,3 +79,6 @@ git push -u origin main
 git remote add origin https://github.com/fbergami57/1_primeiro_repo.git
 git branch -M main
 git push -u origin main
+
+
+***************git config --global http.sslbackend schannel****************
